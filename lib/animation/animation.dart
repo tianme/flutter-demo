@@ -81,6 +81,7 @@ class TopBoxState extends State<TopBox> {
 
     for (int item in this._list) {
       Container con = new Container(
+        // 手动设置 key 属性，如果不手动设置会导致渲染错误
         key: Key(item.toString()),
         margin: EdgeInsets.only(top: 10.0),
 
